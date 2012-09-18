@@ -13,6 +13,7 @@ License:	GPLv2
 Group:		System/Libraries
 Url:		http://www.gnome.org
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/goffice/%{origname}-%{version}.tar.xz
+Patch0:		goffice-0.8.17-no-pcre.patch
 BuildRequires:	pkgconfig(glib-2.0) >= 2.8.0
 BuildRequires:	pkgconfig(gobject-2.0) >= 2.16.0
 BuildRequires:	pkgconfig(gmodule-2.0) >= 2.16.0
@@ -29,8 +30,6 @@ BuildRequires:	pkgconfig(cairo-svg) >= 1.2.0
 BuildRequires:	pkgconfig(gconf-2.0)
 BuildRequires:	gtk-doc
 BuildRequires:	intltool
-BuildRequires:	pcre-devel
-BuildRequires:	pcre
 Conflicts:	goffice < 0.9
 
 %description
@@ -60,6 +59,7 @@ Development files of the Goffice library.
 
 %prep
 %setup -qn %{origname}-%{version}
+%patch0 -p1
 
 %build
 %configure2_5x --disable-static
