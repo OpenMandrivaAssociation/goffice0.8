@@ -62,6 +62,7 @@ Development files of the Goffice library.
 %patch0 -p1
 
 %build
+autoreconf -fi
 %configure2_5x --disable-static
 %make
 
