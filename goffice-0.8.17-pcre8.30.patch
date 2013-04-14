@@ -5,7 +5,7 @@
  		}
  	} else {
 -		gor->re_nsub = pcre_info (r, NULL, NULL);
-+		gor->re_nsub = pcre_fullinfo (r, NULL, NULL);
++		gor->re_nsub = pcre_fullinfo (r, NULL, NULL, NULL);
  		gor->nosub = (cflags & GO_REG_NOSUB) != 0;
  		return 0;
  	}
