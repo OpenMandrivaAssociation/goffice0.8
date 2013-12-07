@@ -7,7 +7,7 @@
 Summary:	Set of document centric objects and utilities for glib/gtk
 Name:		%{oname}%{api}
 Version:	0.8.17
-Release:	5
+Release:	6
 License:	GPLv2
 Group:		System/Libraries
 Url:		http://www.gnome.org
