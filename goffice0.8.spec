@@ -1,4 +1,6 @@
 %define origname goffice
+%define _disable_rebuild_configure 1
+%define _disable_lto 1
 
 %define api 0.8
 %define major 8
