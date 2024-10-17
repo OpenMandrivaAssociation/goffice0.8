@@ -12,7 +12,7 @@ Version:	0.8.17
 Release:	11
 License:	GPLv2
 Group:		System/Libraries
-Url:		http://www.gnome.org
+Url:		https://www.gnome.org
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/goffice/%{oname}-%{version}.tar.xz
 Patch0:		goffice-0.8.17-pcre8.30.patch
 
