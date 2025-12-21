@@ -16,6 +16,11 @@ Url:		https://www.gnome.org
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/goffice/%{oname}-%{version}.tar.xz
 Patch0:		goffice-0.8.17-pcre8.30.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gtk-doc
 BuildRequires:	intltool
 BuildRequires:	pcre
